@@ -22,7 +22,7 @@ void executeWithThreads(long long N)
 {
 	std::thread t[NUM_THREADS];			// using four threads
 	std::chrono::time_point<std::chrono::system_clock> start, end;
-	double sum[NUM_THREADS] = {0.0};	// array of each sum calculated by each thread
+	double sum[NUM_THREADS] = {0.0};	// array of doubles for each sum calculated by each thread
 	double finalSum = 0.0;	
 	start = std::chrono::system_clock::now();
 
